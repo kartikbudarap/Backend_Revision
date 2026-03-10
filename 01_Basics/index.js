@@ -1,6 +1,6 @@
 const express = require('express');
 require('dotenv').config() 
-const app = express();
+const app = express();  //server instance ko create kar rhe hai
 
 const PORT = process.env.PORT
 
@@ -12,6 +12,6 @@ app.get('/login',(req,res)=>{
     res.send("Please login to continue")
 })
 
-app.listen(PORT,()=>{
+app.listen(PORT,()=>{   //server ko iss port pr listen 
     console.log("hello world")
 })
