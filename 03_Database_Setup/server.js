@@ -1,8 +1,5 @@
-const express = require('express')
 const app = require('./src/app');
 const ConnectDB = require('./src/db/db');
-//middle ware
-app.use(express.json());
 
 require('dotenv').config();
 const PORT = process.env.PORT;
