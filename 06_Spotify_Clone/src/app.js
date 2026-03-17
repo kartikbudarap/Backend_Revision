@@ -9,4 +9,4 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 
-module.exports = app;
+module.exports = app;   
